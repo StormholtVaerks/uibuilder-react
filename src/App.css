@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  background-color: black;
+  background: url(../public/pattern_texture1173.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: 35;
+  background-repeat: repeat;
+
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  color:whitesmoke;
+  height: 100%;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  background: url(../public/PngItem_1870837.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  text-align: center;
+  border: none;
+  clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
+  background-color: grey;
+  background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);
+  background-repeat: no-repeat;
+  transition: background-position-y ease-in-out 250ms;
+  width: 200px;
+  margin: 10px;
+ }
+ 
+ button:hover {
+  background-position-y: -50px;
+ }
+ 
+ button:active {
+  transform: scale(0.99);
+ }
+
+ input{
+  width:10%;
+  padding:15px;
+  margin:5px;
+  border-radius:1px;
+  border:1px solid #ccc;
+  font-family:inherit;
+  color: black;
+  
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+ }
+ 
+ /* The slider */
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 30px;
+ }
+ 
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: .4s;
+ }
+ 
+ input:checked + .slider {
+  background-color: #010407;
+ }
+ 
+ input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+ }
+ 
+ input:checked + .slider:before {
+  transform: translateX(1.5em);
+ }
+
+/* Forms{
+  background: transparent;
+  border-radius: 0px;
+  border-color: #dddddd40;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+} */
